@@ -1,0 +1,856 @@
+@charset "utf-8";
+
+body{
+    min-width: 1280px;
+}
+body,p,ul,li,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+}
+.clearFix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.clearFix{
+    zoom: 1;
+}
+header{
+    width:100%;
+    background-color: #fff;
+    height: 56px;
+    border-bottom: 1px solid #DCDBDE;
+}
+.banner-left{
+    width:105px;
+    height:56px;
+    float: left;
+    background: url("../img/newworld/logo.png") left center no-repeat;
+    margin-left: 59px;
+}
+.banner-left h1{
+    font: 21px/56px "黑体";
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+header nav{
+    float: left;
+    margin-left: 520px;
+    position: relative;
+}
+header nav ul{
+    margin: 0;
+    padding:0;
+}
+header nav li{
+    list-style: none;
+    float: left;
+    padding: 0 17px;
+    height:56px;
+    margin-right:11px ;
+    line-height: 56px;
+}
+header nav li a{
+    font:14px/56px "微软雅黑";
+    text-decoration: none;
+    color: #ACAEB3;
+    -webkit-transition:color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+}
+header nav li a:hover{
+    color:  #F04C57;
+}
+header nav .move{
+    width:30px;
+    position: absolute;
+    border-top:4px solid #E53C3C;
+    left: 0;
+    top:53px;
+    -webkit-transition: left 0.4s ease-in-out;
+    -moz-transition: left 0.4s ease-in-out;
+    transition: left 0.4s ease-in-out;
+}
+header nav li:nth-child(1):hover~.move{
+    left:0;
+}
+header nav li:nth-child(2):hover~.move{
+    left:20%;
+}
+header nav li:nth-child(3):hover~.move{
+    left:40%;
+}
+header nav li:nth-child(4):hover~.move{
+    left:60%;
+}
+header nav li:nth-child(5):hover~.move{
+    left:80%;
+}
+.banner-right{
+    float: left;
+    height: 56px;
+    margin-left: 10px;
+    background: url("../img/newworld/user.png") left center no-repeat;
+    padding-left: 19px;
+    position: relative;
+}
+.banner-right p{
+    margin:0;
+    height: 56px;
+    line-height: 56px;
+}
+.banner-right p a{
+    font-size: 14px;
+    color: #E74F4D;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.banner-right .move{
+    width:0;
+    position: absolute;
+    border-top: 2px solid #E53C3C;
+    top:40px;
+    left:19px;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.banner-right:hover .move{
+    width:30px;
+}
+#section-2{
+    width:100%;
+    height:250px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#section-2 .items{
+    margin:45px 0 66px 0;
+}
+#section-2 .item{
+    width:25%;
+    float: left;
+    box-sizing: border-box;
+}
+#section-2 .item div:nth-child(1) img{
+    margin:0 auto;
+    display: block;
+}
+#section-2 .item div:nth-child(2){
+    border-right:2px solid #99999A;
+    margin-top: 46px;
+}
+#section-2 .item:nth-last-child(1) div:nth-child(2){
+    border-right: none;
+}
+#section-2 .item div:nth-child(2) p{
+    width:158px;
+    margin:0 auto;
+    text-align: center;
+    font-size:14px;
+    font-family:"黑体";
+    color: #767677;
+    line-height:20px;
+}
+
+#section-3{
+    background: #ECECEC;
+    overflow: hidden;
+}
+#section-3 .area{
+    margin: 90px 0 75px 0;
+}
+#section-3 .area:nth-child(1) img{
+    display: block;
+    margin:0 auto;
+}
+#section-3 .area:last-child p{
+    text-align: center;
+    margin-top:50px;
+    font-size:54px;
+    font-family: "黑体";
+    color:#323232;
+}
+#section-4{
+    background:url("../img/newworld/mid.jpg") left center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height:340px;
+    overflow: hidden;
+}
+#section-4 p:nth-of-type(1){
+    text-align: center;
+    margin-top:50px;
+    font-size: 21px;
+    font-family: "微软雅黑";
+    color:#FEFEFE;
+}
+#section-4 .line{
+    display: block;
+    width: 31px;
+    border-top:3px solid #DBD0C7;
+    margin:10px auto 18px auto;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#section-4 span:hover{
+    width: 300px;
+}
+#section-4 p:nth-of-type(2){
+    text-align: center;
+    margin-bottom: 51px;
+    font-size:12px;
+    font-family: "微软雅黑";
+    color:#FEFEFE;
+}
+#section-4 .options{
+    margin:0 184px;
+}
+#section-4 .options .select{
+    width:236px;
+    height:36px;
+    float: left;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: left;
+    color: #B3B3B3;
+    background: url("../img/newworld/mes.jpg") 208px center no-repeat,#ffffff;
+    margin-right: 28px;
+    position:relative;
+    top:0;
+}
+#section-4 .options .select .option{
+    display: none;
+    margin-left: -2px;
+}
+#section-4 .options .select span{
+    margin-left: 10px;
+}
+#section-4 input[type="radio"]{
+    width:236px;
+    height:36px;
+    position: relative;
+    top:48px;
+    left:184px;
+    margin-right: 28px;
+    z-index: 10;
+    opacity: 0;
+}
+#section-4 input[type="submit"]{
+    width:236px;
+    height:36px;
+    background-color: #BE4E48;
+    border: none;
+    position: relative;
+    top:34px;
+    left:184px;
+    outline: none;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color:#ffffff;
+    letter-spacing: 20px;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+#section-4 input[type="submit"]:hover{
+    background-color: #E31212;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius:3px;
+}
+#section-4 .options .select ul{
+    width:236px;
+    border:2px solid #AE7271;
+    border-top-width: 0;
+    background-color: #E4E3E5;
+}
+#section-4 .options .select ul li{
+    list-style: none;
+    height:32px;
+    line-height: 32px;
+    text-align: left;
+    padding-left: 40px;
+    color: #333;
+}
+#section-4 .options .select ul li:hover{
+    background: url("../img/newworld/icon-5.png") 10px center no-repeat,#BF4E48;
+    color: #fff;
+}
+#section-4 input[type="radio"]:nth-of-type(1):checked~.options .select,
+#section-4 input[type="radio"]:nth-of-type(2):checked~.options .select,
+#section-4 input[type="radio"]:nth-of-type(3):checked~.options .select{
+    margin-top:-2px;
+}
+#section-4 input[type="radio"]:nth-of-type(1):checked~.options .select-1{
+    border:2px solid #AE7271;
+    border-bottom-width: 0;
+}
+#section-4 input[type="radio"]:nth-of-type(1):checked~.options .select-1 .option{
+    display: block;
+}
+#section-4 input[type="radio"]:nth-of-type(2):checked~.options .select-2{
+    border:2px solid #AE7271;
+    border-bottom-width: 0;
+}
+#section-4 input[type="radio"]:nth-of-type(2):checked~.options .select-2 .option{
+    display: block;
+}
+#section-4 input[type="radio"]:nth-of-type(3):checked~.options .select-3{
+    border:2px solid #AE7271;
+    border-bottom-width: 0;
+}
+#section-4 input[type="radio"]:nth-of-type(3):checked~.options .select-3 .option{
+    display: block;
+}
+
+#section-5{
+    background-color: #F7F7F7;
+    padding:100px 0 114px  0;
+}
+#section-5 .items{
+    width:1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#section-5 .item{
+    float: left;
+    margin-right: 36px;
+}
+#section-5 .item:last-child{
+    margin-right: 0;
+}
+#section-5 .item p:nth-of-type(1){
+    font-size:14px;
+    font-family: "黑体";
+    text-align: center;
+    margin:12px 0;
+}
+#section-5 .item p:nth-of-type(2){
+    font-size:12px;
+    color: #99999A;
+    text-align: center;
+}
+#section-5 .item:nth-child(2) p:nth-of-type(1){
+    font-size: 20px;
+    margin-top:0;
+    margin-bottom: 5px;
+    letter-spacing: 23px;
+}
+#section-5 .item:nth-child(2) p:nth-of-type(2){
+    margin-bottom: 10px;
+}
+#section6{
+    width:100%;
+    height:567px;
+}
+#section6 .area_l{
+    float: left;
+    width:66.5%;
+    height:567px;
+    background:url("../img/newworld/man.jpg") left center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#section6 .area_l h3{
+    font-size: 50px;
+    font-family: "微软雅黑";
+    color:#fff;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 110px;
+}
+#section6 .area_l h1{
+    font-size:150px;
+    font-family: "微软雅黑";
+    color:#fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#section6 .area_l p:nth-of-type(1){
+    text-align: center;
+    color: #fff;
+    font-family: "微软雅黑";
+    font-size:21px;
+}
+#section6 .area_l p:nth-of-type(2){
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-family: "微软雅黑";
+    font-size:21px;
+}
+#section6 .newCountry{
+    position: relative;
+}
+#section6 .area_l:after{
+    content: "";
+    display: block;
+    border-width: 30px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#section6 .area_r{
+    float: left;
+    width: 33.5%;
+}
+#section6 .area_r .wrapper{
+    width: 300px;
+    margin: 165px auto 128px auto;
+}
+#section6 .area_r .wrapper .mes{
+    display: none;
+}
+#section6 .area_r .wrapper .mes-1{
+    display: block;
+}
+#section6 .area_r .wrapper .mes p:first-child{
+    font-size: 20px;
+    text-align: center;
+    color: #656666;
+    font-weight: bold;
+    margin-bottom: 23px;
+}
+#section6 .area_r .wrapper .mes p:first-child>span{
+    color: #E74F4D;
+}
+#section6 .area_r .wrapper .mes p:last-child{
+    font-size: 12px;
+    font-family: "宋体";
+    color: #ccc;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+#section6 .area_r .wrapper .button>span{
+    display: block;
+    width: 105px;
+    height: 33px;
+    margin: 0 auto;
+    border: 2px solid #E87B7E;
+    line-height: 33px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color:#E25C5F;
+    cursor: pointer;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -ms-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+#section6 .area_r .wrapper .button>span:hover{
+    background-color: #BE4F48;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    color: #ffffff;
+}
+#section6 .area_r .wrapper .list{
+    width: 10px;
+    height: 10px;
+    border:1px solid #6C5C5C;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    display:inline-block;
+    cursor: pointer;
+    position: relative;
+    top: 320px;
+    left: 60px;
+}
+#section6 .area_r .wrapper input[type="radio"]{
+    width: 10px;
+    height:10px;
+    position: relative;
+    top: 320px;
+    left: 118px;
+    z-index: 10;
+    opacity: 0;
+}
+#section6 .area_r .wrapper input[type="radio"]:checked~.list{
+    background-color: #ffffff;
+}
+#section6 .area_r .wrapper input[type="radio"]:checked~.mes{
+    display: none;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(1):checked~.mes-1{
+    display: block;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(1):checked~.list:nth-of-type(1){
+    background-color: #6C5C5C;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(2):checked~.mes-2{
+    display: block;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(2):checked~.list:nth-of-type(2){
+    background-color: #6C5C5C;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(3):checked~.mes-3{
+    display: block;
+}
+#section6 .area_r .wrapper input[type="radio"]:nth-of-type(3):checked~.list:nth-of-type(3){
+    background-color: #6C5C5C;
+}
+#section-7{
+    width: 100%;
+    height: 520px;
+}
+#section-7 .left,#section-7 .mid,#section-7 .right{
+    float: left;
+    width: 33.3%;
+}
+#section-7 .left{
+    background-color: #E7504D;
+    height: 520px;
+}
+#section-7 .left p:nth-of-type(1){
+    margin-top: 170px;
+    text-align: center;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #ffffff;
+}
+#section-7 .left p:nth-of-type(2){
+    text-align: center;
+    line-height: 25px;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #ffffff;
+}
+#section-7 .left>span{
+    display: block;
+    border-top: 3px solid #ffffff;
+    width: 31px;
+    margin: 20px auto;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#section-7 .left>span:hover{
+    width: 310px;
+}
+#section-7 .left .more{
+    display: block;
+    width: 168px;
+    height: 42px;
+    border: 1px solid #ffffff;
+    margin:0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#section-7 .left .more:hover{
+    background-color: #ffffff;
+    color:#E74F4D;
+}
+#section-7 .mid{
+    height:520px;
+}
+#section-7 .mid p:nth-of-type(1){
+    margin-top: 170px;
+    text-align: center;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #333;
+}
+#section-7 .mid p:nth-of-type(2){
+    text-align: center;
+    line-height: 25px;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #333;
+}
+#section-7 .mid>span{
+    display: block;
+    border-top: 3px solid #cccccc;
+    width: 31px;
+    margin: 20px auto;
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#section-7 .mid>span:hover{
+    width: 310px;
+}
+#section-7 .mid .more{
+    display: block;
+    width: 168px;
+    height: 42px;
+    border: 1px solid #E74F4D;
+    margin:0 auto;
+    line-height: 42px;
+    text-align: center;
+    font-size: 21px;
+    font-family: "黑体";
+    color: #E74F4D;
+    cursor: pointer;
+    -webkit-transition:all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+#section-7 .mid .more:hover{
+    background-color: #E74F4D;
+    color:#ffffff;
+}
+#section-7 .right{
+    height: 520px;
+    background: url("../img/newworld/women.jpg") left center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#section-7 .right:after{
+    content: "";
+    border-style: solid;
+    border-width: 30px;
+    border-color: transparent transparent transparent #ffffff;
+    display: block;
+    position:absolute;
+    top: 50%;
+    left: 0;
+}
+#section-8{
+    padding:118px 140px 166px 140px;
+}
+#section-8 .volunteer .top{
+    margin-bottom: 100px;
+}
+#section-8 .volunteer .top h3{
+    font-size: 21px;
+    font-family: "黑体";
+    text-align: center;
+}
+#section-8 .volunteer .top>span{
+    width: 30px;
+    display: block;
+    border-top: 3px solid #E74F4D;
+    margin: 5px auto 20px auto;
+
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    -ms-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+#section-8 .volunteer .top>span:hover{
+    width: 200px;
+}
+#section-8 .volunteer .top p:last-child{
+    width:422px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #AAAAA9;
+}
+#section-8 .volunteer .bottom .left{
+    width:32%;
+    float: left;
+}
+#section-8 .volunteer .bottom .right{
+    width: 63%;
+    float: right;
+}
+#section-8 .volunteer .bottom .left .item{
+    margin-bottom: 33px;
+}
+#section-8 .volunteer .bottom .left .item:last-child{
+    margin-bottom: 0;
+}
+#section-8 .volunteer .bottom .left .item h3{
+    font-size: 14px;
+    font-family: "黑体";
+    color: #221814;
+    margin-bottom: 17px;
+}
+#section-8 .volunteer .bottom .left .item p:nth-of-type(1){
+    font-size: 12px;
+    font-family: "宋体";
+    color:#AAAAA9;
+    line-height: 23px;
+}
+#section-8 .volunteer .bottom .left .item p:nth-of-type(2),
+#section-8 .volunteer .bottom .left .item:last-child p:nth-of-type(1){
+    font-size: 12px;
+    font-family: "宋体";
+    color: #AAAAA9;
+    text-align: right;
+    line-height: 20px;
+    background: url("../img/newworld/down.png") 90% center no-repeat;
+}
+#section-8 .volunteer .bottom .right input[type="text"]{
+    width:345px;
+    height:41px;
+    background: #EDECEE;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    padding:10px;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #221814;
+    box-sizing: border-box;
+}
+#section-8 .volunteer .bottom .right input[type="text"]:focus{
+    background-color: #ffffff;
+    border: 1px solid #EDECEE;
+}
+#section-8 .volunteer .bottom .right input[type="text"]:nth-of-type(2n){
+    float: right;
+}
+#section-8 .volunteer .bottom .right textarea{
+    width: 100%;
+    height: 120px;
+    border: 0;
+    outline: none;
+    resize: none;
+    background-color: #EDECEE;
+    padding:10px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: "宋体";
+    color: #221814;
+}
+#section-8 .volunteer .bottom .right textarea:focus{
+    background-color: #ffffff;
+    border: 1px solid #EDECEE;
+}
+#section-8 .volunteer .bottom .right input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    font-size: 14px;
+    font-family: "黑体";
+    color:#323232;
+    background-color: #EDECEE;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+#section-8 .volunteer .bottom .right input[type="submit"]:hover{
+    border: 1px solid #EDECEE;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+#section-9{
+    padding-top: 90px;
+    padding-bottom: 72px;
+    background-color: #32353E;
+    overflow: hidden;
+}
+#section-9 h3{
+    font-size: 21px;
+    font-family: ""黑体;
+    color:#FEFEFE;
+    text-align: center;
+}
+#section-9 p:nth-of-type(1){
+    width:472px;
+    text-align: center;
+    font-size: 12px;
+    font-family: "宋体";
+    color:#999B9F;
+    margin: 5px auto;
+    line-height: 16px;
+}
+#section-9 div:nth-of-type(1){
+    width:515px;
+    height: 40px;
+    margin:30px auto;
+}
+#section-9 div:nth-of-type(1) input[type="email"]{
+    width: 430px;
+    height: 40px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+}
+#section-9 div:nth-of-type(1) input[type="submit"]{
+    width: 75px;
+    height:40px;
+    border: none;
+    outline: none;
+    margin-left: -8px;
+    margin-bottom: -5px;
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "微软雅黑";
+    color: #FEFEFE;
+    background-color: #6F7178;
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -ms-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+}
+#section-9 div:nth-of-type(1) input[type="submit"]:hover{
+    background-color: #5E5E68;
+}
+/*避免input标签当选择文本填写的时候背景变色（因为chrom 会自动的给input标签添加默认样式）*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+#section-9 div:nth-of-type(2){
+    width: 200px;
+    margin:0 auto;
+}
+#section-9 div:nth-of-type(2) span{
+    margin-right: 10px;
+}
+footer{
+    padding: 30px 0 16px 0;
+    background-color:#2F3038 ;
+}
+footer p:nth-of-type(1){
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 38px;
+    font-size: 12px;
+    font-family: "宋体";
+    color:#FEFEFE;
+}
+footer p:nth-of-type(2){
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    text-align: right;
+    padding-right: 38px;
+    font-size: 12px;
+    font-family: "宋体";
+    color:#FEFEFE;
+}
